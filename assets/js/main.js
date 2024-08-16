@@ -4,10 +4,11 @@ const buttonSend = document.getElementById("button-send");
 
 buttonSend.addEventListener("click",
     () => {
-        alert(Number(firstName.value) + Number(lastName.value))
+        // alert(Number(firstName.value) + Number(lastName.value))
+        alert(add(Number(firstName.value),Number(lastName.value)));
     }
 );
 
-// function add() {
-//     return firstName + lastName;
-// }
+function add(val1, val2) {
+    return val1 + val2;
+}
