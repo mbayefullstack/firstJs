@@ -2,13 +2,19 @@ const firstName = document.getElementById("first-name");
 const lastName = document.getElementById("last-name");
 const buttonSend = document.getElementById("button-send");
 
-buttonSend.addEventListener("click",
+const reg = /\d/;
+const blockString = reg.test(firstName);
+const blockStringLastName = reg.test(lastName);
+    buttonSend.addEventListener("click",
     () => {
-        // alert(Number(firstName.value) + Number(lastName.value))
-        alert(add(Number(firstName.value),Number(lastName.value)));
+        
+        alert(Number(add.value));
+        // alert(blockString)
     }
 );
 
 function add(val1, val2) {
     return val1 + val2;
 }
+
+
